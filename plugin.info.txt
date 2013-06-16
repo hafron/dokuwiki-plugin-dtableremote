@@ -1,0 +1,7 @@
+base dtableremote
+author Szymon Olewniczak
+email szymon.olewniczak@rid.pl
+date 2013-03-25
+name dtableremote
+desc An dtable plugin making dtable behaving in the old way.
+url http://www.dokuwiki.org/plugin:dtable
