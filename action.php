@@ -63,10 +63,10 @@ class action_plugin_dtableremote extends DokuWiki_Action_Plugin {
 		    $new_row = '';
 		    //remove last \n
 		    $row = substr($row, 0, -1);
-		    $row = str_replace('<br>', '', $row);
 		    $dane = explode($h_dtable->separator(), $row);
 		    for($i=1;$i<sizeof($dane);$i++)
 		    {
+			$dane[$i] = trim(str_replace('<br>', '\\\\ ', $dane[$i]));
 			if(strlen($dane[$i]) <= 0)
 			    $new_row .= '| ';
 			else 
